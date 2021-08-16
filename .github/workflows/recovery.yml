@@ -61,7 +61,7 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v0.3
+          tag_name: v0.4
           name: encryption test
           files: | 
             work/out/target/product/CPH1861/recovery.img
