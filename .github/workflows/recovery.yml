@@ -47,7 +47,7 @@ jobs:
          run: |
              mkdir work
              cd work
-             repo init -u $MANIFEST --depth=1
+             repo init --depth=1 -u $MANIFEST -b twrp-9.0
              repo sync -c -j4 --force-sync --no-clone-bundle --no-tags
              git clone $DT_LINK --depth=1 --single-branch $DT_PATH
              
@@ -62,7 +62,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
           tag_name: v0.4
-          name: encryption test
+          name: fix flags
           files: | 
             work/out/target/product/CPH1861/recovery.img
             
