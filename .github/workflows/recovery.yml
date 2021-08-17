@@ -61,8 +61,8 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v0.3
-          name: fix fstab
+          tag_name: v0.5
+          name: fix otg and usb
           files: | 
             work/out/target/product/CPH1861/recovery.img
             
