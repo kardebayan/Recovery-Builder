@@ -61,8 +61,8 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v0.5
-          name: fix otg and usb
+          tag_name: v0.6
+          name: cos decryption
           files: | 
             work/out/target/product/CPH1861/recovery.img
             
