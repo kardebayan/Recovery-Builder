@@ -61,8 +61,8 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v0.8
-          name: switch to fbe
+          tag_name: v0.9
+          name: fix recovery
           files: | 
             work/out/target/product/CPH1861/recovery.img
             
