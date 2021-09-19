@@ -61,7 +61,7 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v1.3
+          tag_name: v1.4
           name: shrp
           files: | 
             work/out/target/product/CPH1861/recovery.img
