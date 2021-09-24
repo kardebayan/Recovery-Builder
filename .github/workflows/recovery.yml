@@ -47,7 +47,7 @@ jobs:
          run: |
              mkdir work
              cd work
-             repo init --depth=1 -u $MANIFEST -b twrp-9.0
+             repo init --depth=1 -u $MANIFEST -b android-9.0
              repo sync -c -j4 --force-sync --no-clone-bundle --no-tags
              git clone $DT_LINK --depth=1 --single-branch $DT_PATH
              
