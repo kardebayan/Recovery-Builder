@@ -61,8 +61,8 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v1.7
-          name: fix otg
+          tag_name: v2
+          name: fix decryption
           files: | 
             work/out/target/product/CPH1861/recovery.img
             
