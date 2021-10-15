@@ -61,8 +61,8 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v7
-          name: Allow vendor to be wiped
+          tag_name: v8
+          name: Allow system to be wiped
           files: | 
             work/out/target/product/CPH1861/recovery.img
             
