@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni
-  DEVICE: CPH1861
-  DT_LINK: https://github.com/kardebayan/android_device_oppo_CPH1861.git
-  DT_PATH: device/oppo/CPH1861
+  DEVICE: RMX1831
+  DT_LINK: https://github.com/RMX1831/android_device_RMX1831_TWRP
+  DT_PATH: device/realme/RMX1831
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
@@ -49,7 +49,7 @@ jobs:
              cd work
              repo init --depth=1 -u $MANIFEST -b twrp-9.0
              repo sync -c -j4 --force-sync --no-clone-bundle --no-tags
-             git clone $DT_LINK --depth=1 --single-branch $DT_PATH
+             git clone $DT_LINK -b android-9.0 --depth=1 --single-branch $DT_PATH
              
        - name: Build
          run: |
@@ -61,8 +61,8 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v1.7
-          name: fix otg
+          tag_name: v9
+          name: idk
           files: | 
-            work/out/target/product/CPH1861/recovery.img
+            work/out/target/product/$DEVICE/recovery.img
             
