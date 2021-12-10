@@ -49,7 +49,7 @@ jobs:
              cd work
              repo init --depth=1 -u $MANIFEST -b twrp-9.0
              repo sync -c -j4 --force-sync --no-clone-bundle --no-tags
-             git clone $DT_LINK -b android-9.0 --depth=1 --single-branch $DT_PATH
+             git clone $DT_LINK --depth=1 --single-branch $DT_PATH
              
        - name: Build
          run: |
