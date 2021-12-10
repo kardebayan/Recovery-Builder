@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni
-  DEVICE: RMX1831
-  DT_LINK: https://github.com/RMX1831/android_device_RMX1831_TWRP
-  DT_PATH: device/realme/RMX1831
+  DEVICE: G
+  DT_LINK: https://github.com/kardebayan/omni_device_10or_G.git
+  DT_PATH: device/10or/G
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
@@ -61,7 +61,7 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v9
+          tag_name: v69
           name: idk
           files: | 
             work/out/target/product/$DEVICE/recovery.img
