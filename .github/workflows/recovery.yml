@@ -13,10 +13,10 @@ on:
   workflow_dispatch:
 
 env:
-  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni
-  DEVICE: G
-  DT_LINK: https://github.com/kardebayan/omni_device_10or_G.git
-  DT_PATH: device/10or/G
+  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+  DEVICE: mi8937
+  DT_LINK: https://github.com/kardebayan/twrp_device_xiaomi_mi8937-new.git
+  DT_PATH: device/xiaomi/mi8937
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
@@ -47,7 +47,7 @@ jobs:
          run: |
              mkdir work
              cd work
-             repo init --depth=1 -u $MANIFEST -b twrp-9.0
+             repo init --depth=1 -u $MANIFEST -b twrp-11
              repo sync -c -j4 --force-sync --no-clone-bundle --no-tags
              git clone $DT_LINK --depth=1 --single-branch $DT_PATH
              
@@ -61,7 +61,7 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: v69
+          tag_name: v70
           name: idk
           files: | 
             work/out/target/product/$DEVICE/recovery.img
