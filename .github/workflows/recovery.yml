@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
-  DEVICE: mi8937
-  DT_LINK: https://github.com/kardebayan/twrp_device_xiaomi_mi8937-new.git
-  DT_PATH: device/xiaomi/mi8937
+  DEVICE: Infinix-X6816C
+  DT_LINK: https://github.com/jatinr333/Infinix-hot-12-play-Twrp-Tree
+  DT_PATH: device/infinix/Infinix-X6816C
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
