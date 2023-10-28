@@ -13,10 +13,10 @@ on:
   workflow_dispatch:
 
 env:
-  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
-  DEVICE: mi8937
-  DT_LINK: https://github.com/kardebayan/twrp_device_xiaomi_mi8937-new.git
-  DT_PATH: device/xiaomi/mi8937
+  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
+  DEVICE: X688B
+  DT_LINK: https://github.com/NeonzDump/twrp_infinix_X688B
+  DT_PATH: device/infinix/X688B
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
